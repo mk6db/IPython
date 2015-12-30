@@ -1,0 +1,47 @@
+List of Python Tools:
+
+Modeling:
+
+Machine Learning Map - http://scikit-learn.org/stable/tutorial/machine_learning_map/
+
+K Nearest Neighbors - https://github.com/justmarkham/DAT5/blob/master/code/05_sklearn_knn.py
+
+Linear Regression - https://github.com/justmarkham/DAT5/blob/master/notebooks/09_linear_regression.ipynb
+
+Logistic Regression - https://github.com/justmarkham/DAT5/blob/master/code/10_logistic_regression_confusion_matrix.py
+
+Decision Trees - https://github.com/justmarkham/DAT5/blob/master/notebooks/16_decision_trees.ipynb
+
+Ensembling/Random Forest - https://github.com/justmarkham/DAT5/blob/master/notebooks/17_ensembling.ipynb
+
+Other Ensemble Methods (not included in GA): AdaBoost (http://scikit-learn.org/stable/modules/ensemble.html#adaboost) & Gradiant Tree Boosting (http://scikit-learn.org/stable/modules/ensemble.html#gradient-tree-boosting)
+
+Clustering - https://github.com/justmarkham/DAT5/blob/master/code/18_clustering.py
+
+Model Evaluation Procedures:
+
+Train/Test/Split - https://github.com/justmarkham/DAT5/blob/master/notebooks/06_model_evaluation_procedures.ipynb
+
+AUC/ROC - https://github.com/justmarkham/DAT5/blob/master/notebooks/11_roc_auc.ipynb
+
+Cross Validation - https://github.com/justmarkham/DAT5/blob/master/notebooks/11_cross_validation.ipynb
+
+Other:
+
+Web Scraping - https://github.com/justmarkham/DAT5/blob/master/code/08_web_scraping.py
+
+Naive Bayes - https://github.com/justmarkham/DAT5/blob/master/code/13_naive_bayes.py
+
+NLP - https://github.com/justmarkham/DAT5/blob/master/notebooks/14_nlp.ipynb
+
+Pandas Examples - https://github.com/justmarkham/DAT5/blob/master/homework/03_pandas_hw_soln.py
+
+APIs - https://github.com/justmarkham/DAT5/blob/master/code/04_apis.py
+
+Visualization - https://github.com/justmarkham/DAT5/blob/master/code/04_visualization.py
+
+Exploring the bias-variance tradeoff - https://github.com/justmarkham/DAT5/blob/master/notebooks/06_bias_variance.ipynb
+
+Multiple Forecasting Examples - https://github.com/justmarkham/DAT5/blob/master/code/15_kaggle.py
+
+Regularization - https://github.com/justmarkham/DAT5/blob/master/code/18_regularization.py

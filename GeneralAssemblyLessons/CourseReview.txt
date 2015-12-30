@@ -1,0 +1,118 @@
+General Assembly: Data Science Review
+
+What is the data science workflow?
+1. define the problem
+2. identify and collect data
+3. explore and prepare data
+4. build and evaluate model
+5. communicate results
+
+What is the difference between supervised and unsupervised learning?
+- supervised learning has a response you are trying to predict, and goal is generalization
+- unsupervised learning has no response, and goal is representation
+
+What is the difference between regression and classification?
+- regression predicts a continuous response, whereas classification predicts a categorical response
+- both are supervised learning techniques
+
+What are the models we learned that can be used for regression?
+- KNN, linear regression (including regularized), decision trees, Random Forests
+
+What are the models we learned that can be used for classification?
+- KNN, logistic regression (including regularized), Naive Bayes, decision trees, Random Forests
+
+What letters are commonly used to represent the following concepts?
+- number of observations (n)
+- number of features (p)
+- matrix of features (X)
+- vector of responses (y)
+
+How does KNN work for classification?
+1. pick value for K
+2. tally response of K nearest neighbors
+3. use most common response as predicted class
+
+What is the bias-variance trade-off, and why should we care about it?
+- increasing model complexity increases variance but decreases bias, whereas decreasing model complexity decreases variance but increases bias
+- total generalization error of a model is determined by both bias and variance, thus optimum model complexity requires balancing the two
+
+What’s wrong with training and testing on the same data?
+- you can create an arbitrarily complex model that will perform well on the training data but won’t generalize to out-of-sample data (known as “overfitting”)
+
+What are two procedures we used to estimate out-of-sample error? What are the strengths of each?
+- train/test split (aka “test set approach”) and cross-validation
+- train/test split is simple to code and fast to run
+- cross-validation is more accurate for estimating out-of-sample error
+
+What are some reasons that linear regression is popular?
+- runs fast, easy to use, highly interpretable
+
+How do you fit a linear regression model?
+- draw a line to minimize the mean squared error between the model prediction and the observed data
+
+How do you interpret the coefficients of a linear regression model? For example, how do you interpret B0=10, B1=3, B2=-5?
+- when x1 and x2 are 0, the response is 10
+- unit increase in x1 is associated with an increase in the response of 3 units
+- unit increase in x2 is associated with a decrease in the response of 5 units
+
+When using logistic regression, what is the relationship between predicted probabilities and class predictions?
+- predicted probabilities are the probabilities that each observation belongs to a given class
+- they can be mapped to class predictions by setting a threshold and classifying everything above that threshold as 1, and everything below that threshold as 0
+
+How do you interpret the coefficients of a logistic regression model? For example, how do you interpret B1=0.693, B2=-1.39?
+- unit increase in x1 is associated with an increase in the log odds of “occurrence” by 0.693, or an increase in the odds of occurrence by e^0.693=2
+- unit increase in x2 is associated with a decrease in the log odds of “occurrence” by 1.39, or a decrease in the odds of occurrence by e^1.39=4
+
+What is the purpose of Root Mean Squared Error, and why is it preferred over Mean Squared Error?
+- used as an evaluation metric for regression problems
+- preferred because RMSE is interpretable in the “y” units
+
+Why is a confusion matrix useful for measuring the performance of a classifier?
+- gives a much more nuanced picture of classification performance than classification accuracy
+- allows you to calculate sensitivity, specificity, etc.
+
+What makes AUC better than accuracy as a single number measure of classifier performance?
+- AUC is useful even when your classes are highly unbalanced
+- accuracy requires setting a classification threshold, whereas AUC does not
+
+How do we encode categorical variables for use with a model?
+- binary variable: encode as 0/1
+- more than 2 unordered categories: create dummy variables and drop the baseline level
+- more than 2 ordered categories: encode as a single numbered variable
+
+How does K-means clustering work?
+1. choose k initial centroids
+2. assign each point to the nearest centroid
+3. recalculate centroids
+4. repeat steps 2 and 3 until stopping criteria are met
+
+What is “naive” about a Naive Bayes classifier?
+- it assumes that the features are conditionally independent, which simplifies the calculation of the likelihood function
+
+Why is Naive Bayes popular for spam classification?
+- text generates lots of features, and Naive Bayes handles lots of features well (including irrelevant features)
+- Naive Bayes is fast, and thus is appropriate for real-time applications
+
+What are some advantages and disadvantages of decision trees, compared to other methods?
+- advantages: interpretable, can be displayed graphically or specified as a series of rules, non-parametric
+- disadvantages: high variance, low predictive accuracy, poor performance with unbalanced classes
+
+If the relationship between predictors and response is highly non-linear, are decision trees or linear regression the better choice for modeling? Why?
+- decision trees, because they can fit non-linear relationships
+
+What are two conditions that must be met for ensembling of models to be useful?
+- models should be accurate and independent
+
+How do Random Forests work?
+- grow a lot of decision trees using bootstrapped training sets, and grow them deep
+- when building each tree, each time a split is considered, only consider a random subset of predictors
+- all trees make predictions, and those predictions are averaged
+
+For recommendation engines, what is the difference between content-based filtering and collaborative filtering?
+- content-based filtering depends upon similarity of item characteristics, and collaborative filtering depends upon similarity of user preferences
+
+What is the goal of regularization?
+- constrain the size of coefficients in order to minimize overfitting
+
+What techniques have we seen that might benefit from feature standardization?
+- KNN, regularized regression and classification, clustering
